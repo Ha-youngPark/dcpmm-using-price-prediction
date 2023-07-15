@@ -9,6 +9,7 @@ This project is about Dynamic Constant Product Market Maker that control the pri
 3. [Tech Stack](#📚-tech-stack)
 4. [My Roles](#📝-my-roles)
 5. [System Structure](#🏭-system-structure)
+6. [Shortcomings](#⭐-shortcomings)
 <br/>
 
 ## :mag_right: About Project
@@ -146,5 +147,25 @@ Dynamic constant product curve is as follows
 $$𝑤(𝑡) ∙(𝑥(𝑡) − 𝑎(𝑡𝑡)) ∙ 𝑦(𝑡) = 𝑘$$
 𝑥(𝑡) and 𝑦(𝑡) are reserves of each token at 𝑡 time. 𝑥(𝑡) and 𝑦(𝑡) is positive. 𝑎(𝑡) is less than 𝑥(𝑡).
 𝑤(𝑡) is positive.  
-When the market price changes, w(t) and a(t) change in order to ensure that the new market price and the new curve intersects the current liquidity pair.
+When the market price changes, w(t) and a(t) change in order to ensure that the new market price and the new curve intersects the current liquidity pair.  
 <br/>
+
+
+## :star: Shortcomings
+I conducted simulations on three scenarios: when the curve is fixed, when the curve changed according to the actual market price, and when the curve changed according to the predicted price.  
+
+The simulation results show that the changing curve following the market price is better than the fixed price curve but changing curve following the predicted price is worse.  
+
+There are limitations that will be addressed in future works.  
+* Our cryptocurrency price prediction model provides daily price prediction data. Additional data should be collected using a web scraper to provide a more sophisticated time unit dataset. 
+* I used LSTM which is commonly used for price prediction but has limitations. We can make use of recent findings on processing time series data, such as ARIMA, GRU, and Transformer.  
+* Sentimental analysis can be used with historical price data analysis. Social media(Twitter and Reddit) have a significant impact on changes in cryptocurrency prices.  
+* Our price prediction model is centralized. It’s not line with the blockchain's decentralization character. In the future, we might make our model decentralized using InterPlanetary FileSystem (IPFS) and computational oracle.
+
+
+Considering the results of a simulation that used actual market price, if the latest research methods are applied and design of the research is refined, it is certain that our system would be improved.
+
+
+
+
+
