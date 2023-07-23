@@ -95,7 +95,7 @@ The cryptocurrency price prediction part makes use of historical cryptocurrency 
 I used Long Short-Term Memory (LSTM) to predict cryptocurrency price. Long Short-Term Memory (LSTM) is a deep learning model with cycle structure makes previous event affect the future event. The model can handle long-term dependencies as well as short-term memory. It is frequently used for time series data such as price and natural language.  
 
 Price prediction model has 2 LSTM layers and 1 Dense layer. I set the window size as 40 which means the model predicts one day using 40 days of previous data. I set batch size as 10, and epochs as 20. Adam
-optimizer is used. Mean squared error is used for loss function. In order to assessthe model's performance, we measured the mean squared error, which is 0.0002054, and the mean absolute error, which is 0.0108949. I used Keras deep learning framework to implement price prediction model.
+optimizer is used. Mean squared error is used for loss function. In order to assess the model's performance, we measured the mean squared error, which is 0.0002054, and the mean absolute error, which is 0.0108949. I used Keras deep learning framework to implement price prediction model.
 
 ```python
 ...
@@ -144,8 +144,9 @@ It utilizes market price input to modify the mathematical relationship between t
 an external oracle that provides low-latency and accurate market prices.  
 
 Dynamic constant product curve is as follows
-$$𝑤(𝑡) ∙(𝑥(𝑡) − 𝑎(𝑡𝑡)) ∙ 𝑦(𝑡) = 𝑘$$
-𝑥(𝑡) and 𝑦(𝑡) are reserves of each token at 𝑡 time. 𝑥(𝑡) and 𝑦(𝑡) is positive. 𝑎(𝑡) is less than 𝑥(𝑡).
+$$𝑤(𝑡) ∙(𝑥(𝑡) − 𝑎(𝑡)) ∙ 𝑦(𝑡) = 𝑘$$  
+𝑥(𝑡) and 𝑦(𝑡) are reserves of each token at 𝑡 time. 
+𝑥(𝑡) and 𝑦(𝑡) is positive. 𝑎(𝑡) is less than 𝑥(𝑡).
 𝑤(𝑡) is positive.  
 When the market price changes, w(t) and a(t) change in order to ensure that the new market price and the new curve intersects the current liquidity pair.  
 <br/>
