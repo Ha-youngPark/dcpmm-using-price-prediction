@@ -48,13 +48,12 @@ Thesis
 ## :books: Tech Stack
 <br/>
 <p align = "center">
-<img src="https://img.shields.io/badge/DeFi-FF8000?style=for-the-badge&logo=&logoColor=white">
-<img src="https://img.shields.io/badge/Decentralized Exchange-3C3C3D?style=for-the-badge&logo=&logoColor=white">
-<img src="https://img.shields.io/badge/Automated Market Maker-55C500?style=for-the-badge&logo=&logoColor=white"> <br/>  
 <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=Python&logoColor=white">
-<img src="https://img.shields.io/badge/Price Prediction-5A0FC8?style=for-the-badge&logo=&logoColor=white">
-<img src="https://img.shields.io/badge/LSTM-40B5A4?style=for-the-badge&logo=&logoColor=white"> <br/>    
-<img src="https://img.shields.io/badge/Chainlink-375BD2?style=for-the-badge&logo=Chainlink&logoColor=white">  
+<img src="https://img.shields.io/badge/Keras-D00000?style=for-the-badge&logo=Keras&logoColor=white">
+<img src="https://img.shields.io/badge/Pandas-150458?style=for-the-badge&logo=Pandas&logoColor=white"> <br>  
+<img src="https://img.shields.io/badge/Numpy-013243?style=for-the-badge&logo=Numpy&logoColor=white">
+<img src="https://img.shields.io/badge/Scikit Learn-F7931E?style=for-the-badge&logo=scikit-learn&logoColor=white"> 
+<img src="https://img.shields.io/badge/Jupyter notebook-F37626?style=for-the-badge&logo=Jupyter&logoColor=white"> <br> 
 </p>
 <br/>
 
